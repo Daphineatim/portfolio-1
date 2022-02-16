@@ -10,7 +10,8 @@
 
 -right click and choose Git Bash here.
 
--git clone git@github.com:
+-git clone git@github.com:https://github.com/Daphineatim/portfolio-1.git
+
 
 ### Prerequisites
 - Github Account
