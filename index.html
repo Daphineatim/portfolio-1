@@ -3,62 +3,77 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta
+      name="description"
+      content="Daphine | Portfolio, Software Developer from Uganda"
+    />
+    <meta
+      name="keywords"
+      content="Portfolio,Software Developer,HTML,CSS,Javascript, Daphine"
+    />
+    <meta name="author" content="Daphine" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Portfolio | Daphine</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <a href="index.html">DAPHINE</a>
-        <div class="humburger-btn">
-          <span class="span-1"></span>
-          <span class="span-2"></span>
-          <span class="span-3"></span>
-        </div>
-      </nav>
-    </header>
-    <section class="headline__section">
-        <hgroup>
-          <h1><span class="Iam">I’m </span>Daphine</h1>
-          <h2>Glad to see you!</h2>
-        </hgroup>
-        <p>
-          I’m <span class="Iam2"> a software developer! </span>I can help you
-          build a product , feature or website Look through some of my work and
-          experience! If you like what you see and have a project you need coded,
-          don’t hestiate to contact me.
+    <div class="hero">
+      <header class="header bg-white">
+        <nav class="navbar flex">
+          <div class="navbar__logo">
+            <a href="#" class="logo link fz-18 fw-700 1h-20">Daphine</a>
+          </div>
+          <div class="humberger menu"></div>
+          <div class="humberger">
+            <img src="humberger.svg" alt="humberger icon" />
+          </div>
+        </nav>
+      </header>
+
+      <section class="head flex">
+        <h1 class="head__title fz-40 fw-700 1h-52">
+          I'm Daphine <span>Glad to see you!</span>
+        </h1>
+        <p class="head__dsc fz-16 fw-400 1h-24">
+          I'm a software developer! I can help you build a product , feature or
+          website Look through some of my work and experience! If you like what
+          you see and have a project you need coded, don’t hestiate to contact
+          me.
         </p>
-     <p class="connect">LET'S CONNECT</p>
-        <ul class="social">
-          <li>
-            <a href="https://twitter.com/DhaPhyn">
-              <img src="./assets/twitter.svg.svg " alt="twitter "
-            /></a>
-          </li>
-  
-          <li>
-            <a href="https://www.linkedin.com/in/daphine-atim-27861422a/ ">
-              <img src="./assets/linkedin.svg.svg " alt="linkedin "
-            /></a>
-          </li>
-          <li>
-            <a href="https://medium.com/@hopedaphine19">
-              <img src="./assets/medium.svg.svg " alt="medium "
-            /></a>
-          </li>
-          <li>
-            <a href="https://github.com/Daphineatim ">
-              <img src="./assets/github.svg.svg " alt="github "
-            /></a>
-          </li>
-          <li>
-            <a href="https://angel.co/u/hope-daphine">
-              <img src="./assets/angellist.svg.svg " alt="angellist "
-            /></a>
-          </li>
-        </ul>
-    </section>
-   
+
+        <a href="#" class="head__link">LET'S CONNECT</a>
+        <div class="assets__icons">
+          <ul class="social-media-icons">
+            <li class="li">
+              <a href="https://twitter.com/DhaPhyn" class="assets link"
+                ><img src="./assets/twitter.svg.svg" alt="twitter icon"
+              /></a>
+            </li>
+            <li class="li">
+              <a
+                href="https://www.linkedin.com/in/daphine-atim-27861422a/"
+                class="assets link"
+                ><img src="./assets/linkedin.svg.svg" alt="linkedin icon"
+              /></a>
+            </li>
+            <li class="li">
+              <a href="https://medium.com/@hopedaphine19" class="assets link"
+                ><img src="./assets/medium.svg.svg" alt="medium icon"
+              /></a>
+            </li>
+            <li class="li">
+              <a href="https://github.com/Daphineatim" class="assets link"
+                ><img src="./assets/github.svg.svg" alt="github icon"
+              /></a>
+            </li>
+            <li class="li">
+              <a href="https://angel.co/u/hope-daphine" class="assets link"
+                ><img src="./assets/angellist.svg.svg" alt="angellist icon"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
   </body>
 </html>
