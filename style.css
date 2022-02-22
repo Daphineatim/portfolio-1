@@ -362,7 +362,8 @@ ul.social-media-icons {
   background-color: #6070ff;
   background-image: url("./contact-form.png");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 248px 784px;
+  background-position: top right;
   border-top-left-radius: 70px;
 }
 
@@ -370,6 +371,11 @@ ul.social-media-icons {
   display: flex;
   flex-direction: column;
   margin: 10px 20px;
+}
+
+.contact_container span {
+  width: 40px;
+  margin: 5px 30%;
 }
 
 .contact_container form {
@@ -394,18 +400,33 @@ ul.social-media-icons {
   color: #b3bac5;
   font-size: 15px;
   line-height: 24px;
-  padding: 40px;
+  padding: 3px 36px 40px 3px;
   width: 100%;
+  margin-top: 8px;
+}
+
+.ul button {
+  color: #6070ff;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+  border-radius: 8px;
+  background: #fff;
+  padding: 12px;
+  border: none;
+  margin: 8px 0;
 }
 
 .contact_title {
   font-size: 40px;
   font-weight: bold;
   font-style: normal;
+  line-height: 52px;
   font-family: Poppins, sans-serif;
   color: white;
   text-align: center;
-
+  margin-top: 95px;
 }
 
 .contact_dsc {
@@ -418,3 +439,6 @@ ul.social-media-icons {
   margin: 0.8rem 0 2.8rem;
 }
 
+.contact_container button:hover {
+  cursor: pointer;
+}
