@@ -610,6 +610,30 @@ ul.social-media-icons {
     margin: 0 auto;
   }
 
+  .head__title {
+    padding-left: 60px;
+    width: 50%;
+  }
+
+  .head__title span {
+    position: absolute;
+    top: 27%;
+    left: 75px;
+  }
+
+  .about-conn {
+    margin-top: -40px;
+  }
+
+  .assets__icons {
+    position: relative;
+  }
+
+  .social-media-icons {
+    position: absolute;
+    bottom: 60px;
+  }
+
   .navbar__logo .logo {
     font-size: 1.7rem;
     margin: 10px 0 0 20px;
