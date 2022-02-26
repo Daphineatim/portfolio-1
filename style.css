@@ -556,6 +556,7 @@ ul.social-media-icons {
   .contact_container {
     width: 40%;
     margin: 0 auto;
+    align-items: center;
   }
 
   #form button {
@@ -626,18 +627,20 @@ ul.social-media-icons {
     bottom: 60px;
   }
 
-  .about-btn {
-    width: 124px;
-    height: 48px;
-    padding: 12px;
-    border: 1px solid #593e9b;
-    border-radius: 8px;
-    cursor: pointer;
-    line-height: 24px;
-    font-weight: 500;
+  .btn {
+    color: #6070ff;
     font-size: 17px;
-    color: #593e9b;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: center;
+    border-radius: 8px;
     background: #fff;
+    margin: 8px 0;
+    width: 170px;
+    height: 60px;
+    padding: 12px;
+    border: 1px solid #6070ff;
+    cursor: pointer;
   }
 
   .navbar__logo .logo {
