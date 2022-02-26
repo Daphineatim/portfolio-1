@@ -53,18 +53,6 @@ body {
   font-weight: 400;
 }
 
-/* .1h-52 {
-  line-height: 52px;
-}
-
-.1h-24 {
-  line-height: 24px;
-}
-
-.1h-20 {
-  line-height: 20px;
-} */
-
 .link {
   text-decoration: none;
   padding: 0;
@@ -294,6 +282,10 @@ ul.social-media-icons {
   color: #593e9b;
   margin: 0;
   padding: 0;
+}
+
+.h3-conn {
+  color: #593e9b;
 }
 
 .about-icons {
@@ -632,6 +624,20 @@ ul.social-media-icons {
   .social-media-icons {
     position: absolute;
     bottom: 60px;
+  }
+
+  .about-btn {
+    width: 124px;
+    height: 48px;
+    padding: 12px;
+    border: 1px solid #593e9b;
+    border-radius: 8px;
+    cursor: pointer;
+    line-height: 24px;
+    font-weight: 500;
+    font-size: 17px;
+    color: #593e9b;
+    background: #fff;
   }
 
   .navbar__logo .logo {
