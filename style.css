@@ -461,11 +461,6 @@ ul.social-media-icons {
     display: none;
   }
 
-  .head {
-    width: 90%;
-    margin: 0 auto;
-  }
-
   .navbar__logo .logo {
     font-size: 1.7rem;
     margin: 10px 0 0 20px;
@@ -476,14 +471,14 @@ ul.social-media-icons {
     height: 350px;
   }
 
-  /* .head {
+  .head {
     background-image: url(./assets/header_bg.png);
     background-origin: border-box;
     background-size: contain;
     height: 510px;
     background-position: center;
     background-repeat: no-repeat;
-  } */
+  }
 
   ul.social-media-icons {
     width: 170.17px;
