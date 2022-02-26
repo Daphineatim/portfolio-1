@@ -1,5 +1,5 @@
 /* stylelint-disable length-zero-no-unit */
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 *,
 ::after,
@@ -53,18 +53,6 @@ body {
   font-weight: 400;
 }
 
-/* .1h-52 {
-  line-height: 52px;
-}
-
-.1h-24 {
-  line-height: 24px;
-}
-
-.1h-20 {
-  line-height: 20px;
-} */
-
 .link {
   text-decoration: none;
   padding: 0;
@@ -96,6 +84,10 @@ ul {
 
 .humberger {
   cursor: pointer;
+}
+
+.humberger ul {
+  display: none;
 }
 
 .head {
@@ -292,6 +284,10 @@ ul.social-media-icons {
   padding: 0;
 }
 
+.h3-conn {
+  color: #593e9b;
+}
+
 .about-icons {
   margin: 1.3rem 0 1rem;
   align-items: center;
@@ -441,4 +437,244 @@ ul.social-media-icons {
 
 .contact_container button:hover {
   cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .humberger ul {
+    display: flex;
+    padding: 0 8px;
+  }
+
+  .humberger ul li {
+    padding: 0 8px;
+  }
+
+  .humberger img {
+    display: none;
+  }
+
+  .navbar__logo .logo {
+    font-size: 1.7rem;
+    margin: 10px 0 0 20px;
+  }
+
+  .works-card-img {
+    width: 500px;
+    height: 350px;
+  }
+
+  .head {
+    background-image: url(./assets/header_bg.png);
+    background-origin: border-box;
+    background-size: contain;
+    height: 510px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  ul.social-media-icons {
+    width: 170.17px;
+    padding: 0;
+  }
+
+  .btn {
+    color: #6070ff;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: center;
+    border-radius: 8px;
+    background: #fff;
+    margin: 8px 0;
+    width: 170px;
+    height: 60px;
+    padding: 12px;
+    border: 1px solid #6070ff;
+    cursor: pointer;
+  }
+
+  .Contact-form {
+    background-color: #6070ff;
+    background-image: url("./contact-form.png");
+    background-repeat: no-repeat;
+    background-size: 242px 648px;
+    background-position: top right;
+    border-top-left-radius: 70px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .humberger ul {
+    display: flex;
+    padding: 0 8px;
+  }
+
+  .humberger ul li {
+    padding: 0 8px;
+  }
+
+  .humberger img {
+    display: none;
+  }
+
+  .head {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .navbar__logo .logo {
+    font-size: 1.7rem;
+    margin: 10px 0 0 20px;
+  }
+
+  .first-card {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .first-card img {
+    padding-right: 20px;
+  }
+
+  .second-card {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .third-card {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .second-card img {
+    padding-right: 20px;
+  }
+
+  .fourth-card {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .third-card img {
+    padding-right: 20px;
+  }
+
+  .fourth-card img {
+    padding-left: 20px;
+  }
+
+  .about {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .about-me-description {
+    width: 50%;
+    padding-right: 40px;
+    padding-top: 20px;
+  }
+
+  .about-tech-stack {
+    width: 40%;
+  }
+
+  .contact_container {
+    width: 40%;
+    margin: 0 auto;
+    align-items: center;
+  }
+
+  #form button {
+    margin-left: 30%;
+  }
+
+  .head__title {
+    padding-left: 60px;
+    width: 50%;
+  }
+
+  .head__dsc {
+    padding-left: 60px;
+    width: 70%;
+  }
+
+  .about-conn {
+    padding-left: 60px;
+    width: 50%;
+  }
+
+  .assets__icons {
+    padding-left: 60px;
+    width: 50%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .humberger ul {
+    display: flex;
+    padding: 0 8px;
+  }
+
+  .humberger ul li {
+    padding: 0 8px;
+  }
+
+  .humberger img {
+    display: none;
+  }
+
+  .head {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .head__title {
+    padding-left: 60px;
+    width: 50%;
+  }
+
+  .head__title span {
+    position: absolute;
+    top: 27%;
+    left: 75px;
+  }
+
+  .about-conn {
+    margin-top: -40px;
+  }
+
+  .assets__icons {
+    position: relative;
+  }
+
+  .social-media-icons {
+    position: absolute;
+    bottom: 60px;
+  }
+
+  .btn {
+    color: #6070ff;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: center;
+    border-radius: 8px;
+    background: #fff;
+    margin: 8px 0;
+    width: 170px;
+    height: 60px;
+    padding: 12px;
+    border: 1px solid #6070ff;
+    cursor: pointer;
+  }
+
+  .navbar__logo .logo {
+    font-size: 1.7rem;
+    margin: 10px 0 0 20px;
+  }
+
+  .li {
+    cursor: pointer;
+    background-color: #6a7b99;
+  }
 }
