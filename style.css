@@ -522,6 +522,22 @@ ul.social-media-icons {
     position: static;
     background-size: contain;
   }
+
+  .about-lang-row {
+    align-items: center;
+    gap: 1rem;
+    border-radius: 8px;
+    margin: 12px 0;
+    padding: 9px 12px;
+    display: flex;
+    background: #f7f7f9;
+  }
+
+  .about-lang {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
 }
 
 @media (min-width: 1024px) {
