@@ -308,6 +308,22 @@ ul.social-media-icons {
   list-style: none;
 }
 
+.about-btn > .btn {
+  color: #6070ff;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+  border-radius: 8px;
+  background: #fff;
+  margin: 8px 0;
+  width: 170px;
+  height: 60px;
+  padding: 12px;
+  border: 1px solid #6070ff;
+  cursor: pointer;
+}
+
 .about-languages-list {
   align-items: center;
   justify-content: space-between;
@@ -375,7 +391,7 @@ ul.social-media-icons {
 }
 
 .contact_container form {
-  padding: 10px;
+  padding: 12px;
 }
 
 .ul input {
@@ -414,6 +430,10 @@ ul.social-media-icons {
   margin: 8px 0;
 }
 
+.button:hover {
+  background: white;
+}
+
 .contact_title {
   font-size: 40px;
   font-weight: bold;
@@ -435,10 +455,6 @@ ul.social-media-icons {
   margin: 0.8rem 0 2.8rem;
 }
 
-.contact_container button:hover {
-  cursor: pointer;
-}
-
 @media (min-width: 768px) {
   .humberger ul {
     display: flex;
@@ -451,6 +467,10 @@ ul.social-media-icons {
 
   .humberger img {
     display: none;
+  }
+
+  .button:hover {
+    background: white;
   }
 
   .navbar__logo .logo {
@@ -472,9 +492,35 @@ ul.social-media-icons {
     background-repeat: no-repeat;
   }
 
+  .btn {
+    color: #6070ff;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: center;
+    border-radius: 8px;
+    background: #fff;
+    margin: 8px 0;
+    width: 170px;
+    height: 60px;
+    padding: 12px;
+    border: 1px solid #6070ff;
+    cursor: pointer;
+  }
+
   ul.social-media-icons {
     width: 170.17px;
     padding: 0;
+  }
+
+  .Contact-form {
+    background-color: #6070ff;
+    background-image: url("./contact-form.png");
+    background-repeat: no-repeat;
+    background-position: top right;
+    border-top-left-radius: 70px;
+    position: static;
+    background-size: contain;
   }
 }
 
@@ -508,7 +554,7 @@ ul.social-media-icons {
   }
 
   .first-card img {
-    padding-right: 20px;
+    padding-right: 40px;
   }
 
   .second-card {
@@ -522,7 +568,7 @@ ul.social-media-icons {
   }
 
   .second-card img {
-    padding-right: 20px;
+    padding-right: 30px;
   }
 
   .fourth-card {
@@ -531,11 +577,11 @@ ul.social-media-icons {
   }
 
   .third-card img {
-    padding-right: 20px;
+    padding-right: 40px;
   }
 
   .fourth-card img {
-    padding-left: 20px;
+    padding-left: 40px;
   }
 
   .about {
@@ -573,6 +619,10 @@ ul.social-media-icons {
     width: 70%;
   }
 
+  .button:hover {
+    background: white;
+  }
+
   .about-conn {
     padding-left: 60px;
     width: 50%;
@@ -581,6 +631,14 @@ ul.social-media-icons {
   .assets__icons {
     padding-left: 60px;
     width: 50%;
+  }
+
+  .contact_container form {
+    padding: 10px;
+    width: 447px;
+    height: 395px;
+    left: 177px;
+    top: 182px;
   }
 }
 
@@ -625,6 +683,10 @@ ul.social-media-icons {
   .social-media-icons {
     position: absolute;
     bottom: 60px;
+  }
+
+  .button:hover {
+    background: white;
   }
 
   .btn {
