@@ -12,6 +12,7 @@
 
 -git clone git@github.com:https://github.com/Daphineatim/portfolio-1.git
 
+-Live Demo:  https://daphineatim.github.io/portfolio-1/ 
 
 ### Prerequisites
 - Github Account
