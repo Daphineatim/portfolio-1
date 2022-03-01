@@ -13,7 +13,7 @@
 -git clone git@github.com:(https://github.com/Daphineatim/portfolio-1.git)
 
 
-- [live link](https://daphineatim.github.io/portfolio-1/)
+- [live link]()
 
 ### Prerequisites
 - Github Account
