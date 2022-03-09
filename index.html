@@ -23,19 +23,22 @@
           <div class="navbar__logo">
             <a href="#" class="logo link fz-18 fw-700 1h-20">Daphine</a>
           </div>
-          <div class="humberger menu"></div>
+          <!-- <div class="humberger menu"></div> -->
+           <img id="hummberger" class="hide menu-icon" src="./humberger.svg" alt="menu icon">
           <div class="humberger">
-            <ul>
+            <ul class="humberger">
               <li>Portfolio</li>
               <li>About</li>
               <li>Contact</li>
             </ul>
-            <img src="humberger.svg" alt="humberger icon" />
-          </div>
-        </nav>
+            </div>
+
+         </nav>
       </header>
+
+       <!-- intro section -->
       <section class="head flex">
-        <h1 class="head__title fz-40 fw-700 1h-52">
+     <h1 class="head__title fz-40 fw-700 1h-52">
           I'm Daphine <span>Glad to see you!</span>
         </h1>
         <p class="head__dsc fz-16 fw-400 1h-24">
@@ -49,7 +52,7 @@
           <ul class="social-media-icons">
             <li class="li">
               <a href="https://twitter.com/DhaPhyn" class="assets link"
-                ><img src="./assets/twitter.svg.svg" alt="twitter icon"
+                ><img src="./assets/twitter.svg" alt="twitter icon"
               /></a>
             </li>
             <li class="li">
@@ -61,29 +64,33 @@
             </li>
             <li class="li">
               <a href="https://medium.com/@hopedaphine19" class="assets link"
-                ><img src="./assets/medium.svg.svg" alt="medium icon"
+                ><img src="./assets/medium.svg" alt="medium icon"
               /></a>
             </li>
             <li class="li">
               <a href="https://github.com/Daphineatim" class="assets link"
-                ><img src="./assets/github.svg.svg" alt="github icon"
+                ><img src="./assets/github.svg" alt="github icon"
               /></a>
             </li>
             <li class="li">
               <a href="https://angel.co/u/hope-daphine" class="assets link"
-                ><img src="./assets/angellist.svg.svg" alt="angellist icon"
+                ><img src="./assets/angellist.svg" alt="angellist icon"
               /></a>
             </li>
           </ul>
         </div>
       </section>
     </div>
-    <section class="works">
-      <ul class="works-card-list">
+
+    <!-- works-section -->
+    <section class="works" id="work">
+        <ul class="works-card-list">
+
+        <!-- first-project -->
         <li class="works-card first-card">
           <img
             class="works-card-img"
-            src="./nature.svg.svg"
+            src="./assets/tonic.svg"
             alt="tonic project"
           />
           <div class="works-card-text">
@@ -109,10 +116,11 @@
           </div>
         </li>
 
+        <!-- second-project -->
         <li class="works-card second-card">
           <img
             class="works-card-img"
-            src="./printing.svg.svg"
+            src="./assets/multi-post.svg.svg"
             alt="tonic project"
           />
           <div class="works-card-text">
@@ -140,6 +148,7 @@
           </div>
         </li>
 
+        <!-- third-project -->
         <li class="works-card third-card">
           <img
             class="works-card-img"
@@ -171,6 +180,7 @@ Exploring the future of media in Facebook's first Virtual Reality
           </div>
         </li>
 
+        <!-- fourth-project -->
          <li class="works-card fourth-card">
           <img
             class="works-card-img"
@@ -204,6 +214,7 @@ Exploring the future of media in Facebook's first Virtual Reality
       </ul>
     </section>
 
+<!-- about-me-section -->
     <section class="about">
       <div class="about-me-description">
         <div class="about-heading">
@@ -223,12 +234,12 @@ Exploring the future of media in Facebook's first Virtual Reality
             </li>
             <li class="about-icons-li">
               <a href="#" class="about-icons-li-a"
-                ><img src="./assets/twitter.svg.svg" alt="twitter icon"
+                ><img src="./assets/twitter.svg" alt="twitter icon"
               /></a>
             </li>
             <li class="about-icons-li">
               <a href="#" class="about-icons-li-a"
-                ><img src="./assets/angellist.svg.svg" alt="angellist icon"
+                ><img src="./assets/angellist.svg" alt="angellist icon"
               /></a>
             </li>
             <li class="about-icons-li">
@@ -238,7 +249,7 @@ Exploring the future of media in Facebook's first Virtual Reality
             </li>
             <li class="about-icons-li">
               <a href="#" class="about-icons-li-a"
-                ><img src="./assets/medium.svg.svg" alt="medium icon"
+                ><img src="./assets/medium.svg" alt="medium icon"
               /></a>
             </li>
           </ul>
@@ -296,6 +307,8 @@ Exploring the future of media in Facebook's first Virtual Reality
         </ul>
       </div>
     </section>
+
+    <!-- contact-section -->
     <footer class="Contact-form">
       <div class="contact_container">
         <h2 class="contact_title">Contact me</h2>
@@ -323,5 +336,6 @@ Exploring the future of media in Facebook's first Virtual Reality
         </form>
       </div>
     </footer>
-  </body>
+  <script src="index.js"></script>
+</body>
 </html>
