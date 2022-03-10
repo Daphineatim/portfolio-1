@@ -13,6 +13,7 @@
     />
     <meta name="author" content="Daphine" />
     <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="mobile.css" />
     <link rel="stylesheet" href="./style.css" />
     <title>Daphine's Portfolio</title>
   </head>
@@ -23,69 +24,74 @@
           <div class="navbar__logo">
             <a href="#" class="logo link fz-18 fw-700 1h-20">Daphine</a>
           </div>
-          <!-- <div class="humberger menu"></div> -->
-           <img id="hummberger" class="hide menu-icon" src="./humberger.svg" alt="menu icon">
-          <div class="humberger">
-            <ul class="humberger">
+          <img
+            id="humberger"
+            class="humberger-toggle"
+            src="./humberger.svg"
+            alt="menu icon"
+          />
+          <img src="./assets/cancel.svg" class="cancel hide" alt="cancel" />
+          <div class="menu-icon menu-toggle">
+            <ul class="menu-icon-ul">
               <li>Portfolio</li>
               <li>About</li>
               <li>Contact</li>
             </ul>
-            </div>
-
-         </nav>
+          </div>
+        </nav>
       </header>
 
-       <!-- intro section -->
+      <!-- intro section -->
       <section class="head flex">
-     <h1 class="head__title fz-40 fw-700 1h-52">
-          I'm Daphine <span>Glad to see you!</span>
-        </h1>
-        <p class="head__dsc fz-16 fw-400 1h-24">
-          I'm a software developer! I can help you build a product , feature or
-          website Look through some of my work and experience! If you like what
-          you see and have a project you need coded, don’t hestiate to contact
-          me.
-        </p>
-        <h3 class="about-conn">Let's Connect</h3>
-        <div class="assets__icons">
-          <ul class="social-media-icons">
-            <li class="li">
-              <a href="https://twitter.com/DhaPhyn" class="assets link"
-                ><img src="./assets/twitter.svg" alt="twitter icon"
-              /></a>
-            </li>
-            <li class="li">
-              <a
-                href="https://www.linkedin.com/in/daphine-atim-27861422a/"
-                class="assets link"
-                ><img src="./assets/linkedin.svg.svg" alt="linkedin icon"
-              /></a>
-            </li>
-            <li class="li">
-              <a href="https://medium.com/@hopedaphine19" class="assets link"
-                ><img src="./assets/medium.svg" alt="medium icon"
-              /></a>
-            </li>
-            <li class="li">
-              <a href="https://github.com/Daphineatim" class="assets link"
-                ><img src="./assets/github.svg" alt="github icon"
-              /></a>
-            </li>
-            <li class="li">
-              <a href="https://angel.co/u/hope-daphine" class="assets link"
-                ><img src="./assets/angellist.svg" alt="angellist icon"
-              /></a>
-            </li>
-          </ul>
+        <div class="border-radius">
+          <h2 class="head__title fz-40 fw-700 1h-52">
+            I'm Daphine <span>Glad to see you!</span>
+          </h2>
+          <p class="head__dsc fz-16 fw-400 1h-24">
+            I'm a software developer! I can help you build a product , feature
+            or website Look through some of my work and experience! If you like
+            what you see and have a project you need coded, don’t hestiate to
+            contact me.
+          </p>
+          <h3 class="about-conn">Let's Connect</h3>
+          <div class="assets__icons">
+            <ul class="social-media-icons">
+              <li class="li">
+                <a href="https://twitter.com/DhaPhyn" class="assets link"
+                  ><img src="./assets/twitter.svg" alt="twitter icon"
+                /></a>
+              </li>
+              <li class="li">
+                <a
+                  href="https://www.linkedin.com/in/daphine-atim-27861422a/"
+                  class="assets link"
+                  ><img src="./assets/linkedin.svg.svg" alt="linkedin icon"
+                /></a>
+              </li>
+              <li class="li">
+                <a href="https://medium.com/@hopedaphine19" class="assets link"
+                  ><img src="./assets/medium.svg" alt="medium icon"
+                /></a>
+              </li>
+              <li class="li">
+                <a href="https://github.com/Daphineatim" class="assets link"
+                  ><img src="./assets/github.svg" alt="github icon"
+                /></a>
+              </li>
+              <li class="li">
+                <a href="https://angel.co/u/hope-daphine" class="assets link"
+                  ><img src="./assets/angellist.svg" alt="angellist icon"
+                /></a>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
-    </div>
+    
 
     <!-- works-section -->
     <section class="works" id="work">
-        <ul class="works-card-list">
-
+      <ul class="works-card-list">
         <!-- first-project -->
         <li class="works-card first-card">
           <img
@@ -103,7 +109,8 @@
               </ul>
             </div>
             <p class="works-card-desc">
-              A daily selection of privately personalized read;no accounts or sign-ups required.
+              A daily selection of privately personalized read;no accounts or
+              sign-ups required.
             </p>
             <div class="works-card-topics-list">
               <p class="works-card-topic">html</p>
@@ -153,7 +160,8 @@
           <img
             class="works-card-img"
             src="./assets/facebook.svg"
-            alt="Facebook"/>
+            alt="Facebook"
+          />
           <div class="works-card-text">
             <h2 class="works-card-title">Facebook 360</h2>
             <div class="works-card-sub">
@@ -164,14 +172,14 @@
               </ul>
             </div>
             <p class="works-card-desc">
-Exploring the future of media in Facebook's first Virtual Reality
- app; a place to discover and enjoy 360 photos and videos on
-  Gear VR.
+              Exploring the future of media in Facebook's first Virtual Reality
+              app; a place to discover and enjoy 360 photos and videos on Gear
+              VR.
             </p>
             <div class="works-card-topics-list">
               <p class="works-card-topic">html</p>
-             <p class="works-card-topic">Ruby on rails</p>
-             <p class="works-card-topic">css</p>
+              <p class="works-card-topic">Ruby on rails</p>
+              <p class="works-card-topic">css</p>
               <p class="works-card-topic">javascript</p>
             </div>
             <div class="works-card-btn">
@@ -181,7 +189,7 @@ Exploring the future of media in Facebook's first Virtual Reality
         </li>
 
         <!-- fourth-project -->
-         <li class="works-card fourth-card">
+        <li class="works-card fourth-card">
           <img
             class="works-card-img"
             src="./assets/uber.svg"
@@ -197,12 +205,12 @@ Exploring the future of media in Facebook's first Virtual Reality
               </ul>
             </div>
             <p class="works-card-desc">
-             A smart assistant to make driving more safe, efficient, and fun
-              by unlocking your most expensive computer: your car.
+              A smart assistant to make driving more safe, efficient, and fun by
+              unlocking your most expensive computer: your car.
             </p>
             <div class="works-card-topics-list">
               <p class="works-card-topic">html</p>
-               <p class="works-card-topic">Ruby on rails</p>
+              <p class="works-card-topic">Ruby on rails</p>
               <p class="works-card-topic">css</p>
               <p class="works-card-topic">javascript</p>
             </div>
@@ -214,16 +222,16 @@ Exploring the future of media in Facebook's first Virtual Reality
       </ul>
     </section>
 
-<!-- about-me-section -->
+    <!-- about-me-section -->
     <section class="about">
       <div class="about-me-description">
         <div class="about-heading">
           <h2 class="about-about-h2">About Myself</h2>
           <p class="about-desc">
             Hello I’m a software developer! I can help you build a product ,
-            feature or website Look through some of my work and experience! If you
-            like what you see and have a project you need coded, don’t hestiate to
-            contact me.
+            feature or website Look through some of my work and experience! If
+            you like what you see and have a project you need coded, don’t
+            hestiate to contact me.
           </p>
           <h3 class="h3-conn">LET'S CONNECT</h3>
           <ul class="about-icons">
@@ -253,9 +261,9 @@ Exploring the future of media in Facebook's first Virtual Reality
               /></a>
             </li>
           </ul>
-           <div class="about-btn">
-              <button type="button" class="btn">Get My Resume</button>
-            </div>
+          <div class="about-btn">
+            <button type="button" class="btn">Get My Resume</button>
+          </div>
         </div>
       </div>
       <div class="about-tech-stack">
@@ -320,13 +328,29 @@ Exploring the future of media in Facebook's first Virtual Reality
         <form id="form" action="https://formspree.io/f/mqknqnoj" method="post">
           <ul class="ul">
             <li>
-              <input type="text" name="contact_name" placeholder="Enter your name" required maxlength="30" />
+              <input
+                type="text"
+                name="contact_name"
+                placeholder="Enter your name"
+                required
+                maxlength="30"
+              />
             </li>
             <li>
-              <input type="email" name="email" placeholder="Enter your email" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="Enter your email"
+                required
+              />
             </li>
             <li>
-              <textarea name="message" placeholder="Write your message here" required maxlength="500">
+              <textarea
+                name="message"
+                placeholder="Write your message here"
+                required
+                maxlength="500"
+              >
               </textarea>
             </li>
             <li>
@@ -336,6 +360,6 @@ Exploring the future of media in Facebook's first Virtual Reality
         </form>
       </div>
     </footer>
-  <script src="index.js"></script>
-</body>
+    <script src="index.js"></script>
+  </body>
 </html>
