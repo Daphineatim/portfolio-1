@@ -1,3 +1,4 @@
+
 /* stylelint-disable length-zero-no-unit */
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
@@ -72,6 +73,12 @@ ul {
   padding: 1rem 1.5rem;
   align-items: center;
   justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  background: #fff;
 }
 
 .logo {
@@ -90,23 +97,33 @@ ul {
   display: none;
 }
 
+.humb-container ul {
+  list-style: none;
+  padding: 10% 0;
+  width: 40%;
+  text-align: center;
+  margin: 25% auto;
+}
+
+.open .mobile-humberger ul {
+  display: block;
+  flex-direction: column;
+}
+
 .head {
   padding: 15px;
   content: "";
   position: relative;
   background-color: #fff;
-  background-image: url(./header-bg.svg);
+  background-image: url(./assets/header-bg/Header-bg.svg);
   background-origin: border-box;
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
   flex-direction: column;
   align-items: flex-start;
   z-index: 10;
+  border-bottom-left-radius: 70px;
 }
 
 .head__title {
@@ -133,6 +150,12 @@ ul.social-media-icons {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.border-radius {
+  /* background: grey; */
+  border-bottom-left-radius: 70px;
+  padding: 100px 0 120px 0;
 }
 
 .assets__icons {
@@ -540,7 +563,23 @@ ul.social-media-icons {
   }
 }
 
+.humberger-toggle {
+  display: block;
+}
+
+.menu-toggle {
+  display: none;
+}
+
 @media (min-width: 1024px) {
+  .humberger-toggle {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
   .humberger ul {
     display: flex;
     padding: 0 8px;
@@ -552,6 +591,13 @@ ul.social-media-icons {
 
   .humberger img {
     display: none;
+  }
+
+  .menu-icon-ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
   }
 
   .head {
@@ -725,4 +771,68 @@ ul.social-media-icons {
     font-size: 1.7rem;
     margin: 10px 0 0 20px;
   }
+}
+
+@media (max-width: 768px) {
+  .humberger {
+    display: block;
+  }
+
+  .humberger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #6070ff;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  .nav-list {
+    margin: 16px 0;
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+}
+
+/* menu button */
+.humb-container {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background-color: #fff;
+  background-image: url("./menu-btn-shape-close.svg");
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-position: 0 0, 70% 20%, 20% 70%, 100% 100%;
+}
+
+.humb-container ul li a {
+  justify-items: center;
+  text-decoration: none;
+  color: #1a2236;
+  font-size: 15px;
+  line-height: 38px;
+  text-align: center;
+}
+
+#close {
+  float: right;
+  padding: 20px;
+}
+
+.display-none {
+  display: none;
 }
