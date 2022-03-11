@@ -3,13 +3,13 @@ const humberger = document.querySelector('#humberger');
 const cancel = document.querySelector('.cancel');
 
 humberger.addEventListener('click', () => {
-  menu.classList.remove('menu-toggle');
-  cancel.classList.remove('hide');
-  humberger.classList.add('hide');
+  menu.style.display = 'block';
+  humberger.style.display = 'none';
+  cancel.style.display = 'block';
 });
 
 cancel.addEventListener('click', () => {
-  menu.classList.add('hide');
-  // cancel.classList.add("hide")
-  // humberger.classList.add("display");
+  menu.style.display = 'none';
+  cancel.style.display = 'none';
+  humberger.style.display = 'block';
 });
