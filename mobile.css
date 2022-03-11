@@ -1,8 +1,8 @@
-.display {
+/* .display {
   display: block;
-}
+} */
 
-.menu-icon {
+/* .menu-icon {
   background: #6070ff;
   position: fixed;
   left: 0;
@@ -13,9 +13,9 @@
   mix-blend-mode: multiply;
   backdrop-filter: blur(12px);
   opacity: 0.9;
-}
+} */
 
-.menu-icon-ul li {
+/* .menu-icon-ul a {
   color: #fff;
   font-family: Poppins, sans-serif;
   font-style: normal;
@@ -23,7 +23,11 @@
   font-size: 32px;
   line-height: 44px;
   margin: 30px 0 50px 0;
-}
+} */
+
+/* .menu-icon-ul li {
+  margin: 50px 20px;
+} */
 
 @media screen and (min-width: 1024px) {
   .humberger {
@@ -42,7 +46,7 @@
   z-index: 10;
 }
 
-#close {
+#cancel {
   background-color: transparent;
   border: 0;
   color: #fff;
@@ -57,12 +61,12 @@
   display: none;
 }
 
-.cancel {
+/* .cancel {
   color: #fff;
   z-index: 20;
-}
+} */
 
-.nav-ul.show {
+.menu-icon {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -81,13 +85,13 @@
   opacity: 0.97;
 }
 
-.nav-text-1,
-.nav-text-2,
-.nav-text-3 {
+/* .menu-text-1,
+.menu-text-2,
+.menu-text-3 {
   font-size: 3rem;
   font-weight: 600;
   color: white;
-}
+} */
 
 /* The Close Button */
 .close {
@@ -108,21 +112,4 @@
   display: flex;
   justify-content: space-around;
   gap: 10px;
-}
-
-@media screen and (min-width: 1024px) {
-  .nav-text-1,
-  .nav-text-2,
-  .nav-text-3 {
-    font-family: Poppins, sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 20px;
-    color: #344563;
-  }
-
-  .humberger {
-    display: none;
-  }
 }
