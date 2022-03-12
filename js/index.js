@@ -75,11 +75,10 @@ const gridContainer = document.querySelector('.works-card-list');
 const modalContainer = document.querySelector('.modal');
 const wrapperContainer = document.querySelector('.wrapper-container');
 const windowContent = cards.map((element) => ` <li class="works-card first-card">
-          <img
-            class="works-card-img"
+          <div><img
             src="${element.featuredImage}"
             alt="tonic project"
-          />
+          /></div>
           <div class="works-card-text">
             <h2 class="works-card-title">${element.name}</h2>
             <div class="works-card-sub">

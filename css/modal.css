@@ -1,12 +1,78 @@
 .modal {
+  margin: 7px;
+  background-color: #fff;
+  border-radius: 8px;
+  display: none;
+  width: 450px;
+  border: 1px solid red;
+}
+
+.works-card-img {
+  width: 30px;
+  border: 3px solid blue;
+}
+
+.modal .cancels {
+  /* position: absolute;
+  right: -50px;
+  text-align: end;
+  border: none;
+  width: 20px;
+  font-size: 40px;
+  background-color: #fff; */
+  position: absolute;
+}
+
+.modal-inner > ul {
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  font-size: 12px;
+  margin: 2px 4px 5px 4px;
+}
+
+.modal-inner > ul li {
+  padding: 4px 1px;
+}
+
+.modal-inner > p {
+  font-size: 16px;
+  margin-bottom: 8px;
+  padding: 8px;
+}
+
+.color_ul > li {
+  color: #6070ff;
+  background-color: #ebebff;
+  width: 20%;
+  border-radius: 4px;
+  padding: 5px 3px;
+  margin: 0 3px;
+}
+
+.button-btn {
+  padding: 12px 20px;
+  width: 40%;
+  margin: 10px 8px;
+  border-radius: 5px;
+  border: 1px solid #396df2;
+  background-color: #fff;
+}
+
+.wrapper-container.active {
+  display: none;
+}
+
+@media screen(min-width: 1024px) {
+  .modal {
     margin: 7px;
     background-color: #fff;
     border-radius: 8px;
     display: none;
     width: 450px;
-}
+  }
 
-.modal .cancels {
+  .modal .cancels {
     position: absolute;
     right: -50px;
     text-align: end;
@@ -14,43 +80,45 @@
     width: 20px;
     font-size: 40px;
     background-color: #fff;
-}
+  }
 
-.modal-inner > ul {
+  .modal-inner > ul {
     text-decoration: none;
     list-style: none;
     display: flex;
     font-size: 12px;
     margin: 2px 4px 5px 4px;
-}
-.modal-inner > ul li {
-    padding: 4px 1px;
-}
+  }
 
-.modal-inner > p {
+  .modal-inner > ul li {
+    padding: 4px 1px;
+  }
+
+  .modal-inner > p {
     font-size: 16px;
     margin-bottom: 8px;
     padding: 8px;
-}
+  }
 
-.color_ul > li {
-    color: #6070FF;
-    background-color: #EBEBFF;
+  .color_ul > li {
+    color: #6070ff;
+    background-color: #ebebff;
     width: 20%;
     border-radius: 4px;
     padding: 5px 3px;
     margin: 0 3px;
-}
+  }
 
-.button-btn {
+  .button-btn {
     padding: 12px 20px;
     width: 40%;
     margin: 10px 8px;
     border-radius: 5px;
-    border: 1px solid #396DF2;
+    border: 1px solid #396df2;
     background-color: #fff;
-}
+  }
 
-.wrapper-container.active {
+  .wrapper-container.active {
     display: none;
+  }
 }
