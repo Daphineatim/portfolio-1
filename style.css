@@ -1,3 +1,4 @@
+
 /* stylelint-disable length-zero-no-unit */
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
@@ -23,6 +24,11 @@ body {
   max-width: 100%;
   background-color: #f7f7f9;
   overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1rem;
 }
 
 .bg-white {
@@ -72,6 +78,12 @@ ul {
   padding: 1rem 1.5rem;
   align-items: center;
   justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  background: #fff;
 }
 
 .logo {
@@ -86,27 +98,19 @@ ul {
   cursor: pointer;
 }
 
-.humberger ul {
-  display: none;
-}
-
 .head {
   padding: 15px;
   content: "";
   position: relative;
   background-color: #fff;
-  background-image: url(./header-bg.svg);
+  background-image: url(./assets/header-bg/Header-bg.svg);
   background-origin: border-box;
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
   flex-direction: column;
   align-items: flex-start;
-  z-index: 10;
+  border-bottom-left-radius: 70px;
 }
 
 .head__title {
@@ -128,6 +132,79 @@ ul {
   text-transform: uppercase;
 }
 
+.menu-icon {
+  display: flex;
+  flex-direction: column;
+  margin-top: 85px;
+}
+
+.sidebar.active {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 50px 20px;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #6070ff;
+  mix-blend-mode: multiply;
+  backdrop-filter: blur(15px);
+  opacity: 0.97;
+}
+
+.sidebar {
+  display: none;
+}
+
+.wrapper.show {
+  opacity: 0.97;
+}
+
+.menu-link {
+  margin-left: 24px;
+  color: #fff;
+  text-decoration: none;
+  font-family: poppins, sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 44px;
+  margin-bottom: 1rem;
+}
+
+.cancel-styling {
+  height: 26px;
+  position: absolute;
+  left: 85%;
+  margin-top: 15px;
+  color: #fff;
+}
+
+.cancel {
+  border: none;
+  background: transparent;
+  outline: none;
+  color: #67798e;
+  font-size: 2rem;
+  margin-left: auto;
+  position: absolute;
+  top: 4rem;
+  right: 40px;
+  z-index: 9;
+}
+
+.cancel:hover,
+.cancel:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 ul.social-media-icons {
   width: 45%;
   display: flex;
@@ -135,11 +212,17 @@ ul.social-media-icons {
   align-items: center;
 }
 
+.border-radius {
+  border-bottom-left-radius: 70px;
+  padding: 100px 0 120px 0;
+}
+
 .assets__icons {
   margin-top: 1rem;
   width: 100vw;
 }
 
+/* works */
 .works-card-list {
   display: grid;
   grid-template-rows: repeat(3, auto);
@@ -247,6 +330,7 @@ ul.social-media-icons {
   background: #fff;
 }
 
+/* about */
 .about {
   padding: 7.125rem 1.5rem;
   border-top-right-radius: 5rem;
@@ -455,103 +539,47 @@ ul.social-media-icons {
   margin: 0.8rem 0 2.8rem;
 }
 
-@media (min-width: 768px) {
-  .humberger ul {
-    display: flex;
-    padding: 0 8px;
-  }
-
-  .humberger ul li {
-    padding: 0 8px;
-  }
-
-  .humberger img {
-    display: none;
-  }
-
-  .button:hover {
-    background: white;
-  }
-
-  .navbar__logo .logo {
-    font-size: 1.7rem;
-    margin: 10px 0 0 20px;
-  }
-
-  .works-card-img {
-    width: 500px;
-    height: 350px;
-  }
-
-  .head {
-    background-image: url(./assets/header_bg.png);
-    background-origin: border-box;
-    background-size: contain;
-    height: 510px;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-
-  .btn {
-    color: #6070ff;
-    font-size: 17px;
-    font-weight: 500;
-    line-height: 24px;
-    text-align: center;
-    border-radius: 8px;
-    background: #fff;
-    margin: 8px 0;
-    width: 170px;
-    height: 60px;
-    padding: 12px;
-    border: 1px solid #6070ff;
-    cursor: pointer;
-  }
-
-  ul.social-media-icons {
-    width: 170.17px;
-    padding: 0;
-  }
-
-  .Contact-form {
-    background-color: #6070ff;
-    background-image: url("./contact-form.png");
-    background-repeat: no-repeat;
-    background-position: top right;
-    border-top-left-radius: 70px;
-    position: static;
-    background-size: contain;
-  }
-
-  .about-lang-row {
-    align-items: center;
-    gap: 1rem;
-    border-radius: 8px;
-    margin: 12px 0;
-    padding: 9px 12px;
-    display: flex;
-    background: #f7f7f9;
-  }
-
-  .about-lang {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
+.menu-desktop {
+  display: none;
 }
 
 @media (min-width: 1024px) {
-  .humberger ul {
-    display: flex;
-    padding: 0 8px;
+  .humberger-toggle {
+    visibility: hidden;
   }
 
-  .humberger ul li {
-    padding: 0 8px;
-  }
-
-  .humberger img {
+  .sidebar {
     display: none;
+  }
+
+  .menu-desktop {
+    display: flex;
+    margin-left: auto;
+    margin-right: 120px;
+    visibility: visible;
+  }
+
+  .menu-desktop ul {
+    display: flex;
+  }
+
+  .menu-desktop li {
+    list-style: none;
+    padding: 12px;
+    text-decoration: none;
+  }
+
+  .menu-desktop li a {
+    text-decoration: none;
+    color: #344563;
+    font-size: 15px;
+    font-weight: 500;
+    font-style: normal;
+    background-color: #fff;
+  }
+
+  .menu-desktop li a:hover {
+    color: #4472e7;
   }
 
   .head {
@@ -655,74 +683,5 @@ ul.social-media-icons {
     height: 395px;
     left: 177px;
     top: 182px;
-  }
-}
-
-@media (min-width: 1440px) {
-  .humberger ul {
-    display: flex;
-    padding: 0 8px;
-  }
-
-  .humberger ul li {
-    padding: 0 8px;
-  }
-
-  .humberger img {
-    display: none;
-  }
-
-  .head {
-    width: 90%;
-    margin: 0 auto;
-  }
-
-  .head__title {
-    padding-left: 60px;
-    width: 50%;
-  }
-
-  .head__title span {
-    position: absolute;
-    top: 27%;
-    left: 75px;
-  }
-
-  .about-conn {
-    margin-top: -40px;
-  }
-
-  .assets__icons {
-    position: relative;
-  }
-
-  .social-media-icons {
-    position: absolute;
-    bottom: 60px;
-  }
-
-  .button:hover {
-    background: white;
-  }
-
-  .btn {
-    color: #6070ff;
-    font-size: 17px;
-    font-weight: 500;
-    line-height: 24px;
-    text-align: center;
-    border-radius: 8px;
-    background: #fff;
-    margin: 8px 0;
-    width: 170px;
-    height: 60px;
-    padding: 12px;
-    border: 1px solid #6070ff;
-    cursor: pointer;
-  }
-
-  .navbar__logo .logo {
-    font-size: 1.7rem;
-    margin: 10px 0 0 20px;
   }
 }
