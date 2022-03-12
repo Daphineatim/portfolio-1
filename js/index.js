@@ -38,6 +38,8 @@ formContainer.addEventListener('submit', (e) => {
   }
 });
 
+window.onload = showWorks();
+
 if (formContainer) {
   const { name, email, message } = JSON.parse(localStorage.getItem('formData'));
   document.querySelector('name').value = name;
