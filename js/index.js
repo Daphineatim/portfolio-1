@@ -72,9 +72,8 @@ const cards = [
 ];
 
 const gridContainer = document.querySelector('.works-card-list');
-// const projectDetails = document.querySelector('#project_details');
-// const wrapperContainer = document.querySelector('.wrapper-container');
-
+const modalContainer = document.querySelector('.modal');
+const wrapperContainer = document.querySelector('.wrapper-container');
 const windowContent = cards.map((element) => ` <li class="works-card first-card">
           <img
             class="works-card-img"
@@ -99,12 +98,53 @@ const windowContent = cards.map((element) => ` <li class="works-card first-card"
               <p class="works-card-topic">javascript</p>
             </div>
             <div class="works-card-btn">
-              <button type="button" class="btn">See Project</button>
+              <button type="button" onclick="showModal()" class="btn">See Project</button>
             </div>
           </div>
         </li>`).join('');
 
-        gridContainer.innerHTML += windowContent;
+ gridContainer.innerHTML += windowContent;
+
+        // modal pop up window
+      
+const modalWindow = `<button class="cancels" onclick="hidePop()" type="button">&times;</button>
+  <div class="modal-inner">
+    <h2>Tonic</h2>
+    <ul>
+      <li>Canopy</li>
+      <li>Back End Dev</li>
+      <li>2015</li>
+    </ul>
+    <img src="./assets/tonic.svg" alt>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit assumenda ad totam et explicabo. Voluptate, veritatis! Eum labore sint exercitationem libero qui deserunt aliquam eveniet! Iusto optio aperiam quisquam quia.</p>
+    <ul class="color_ul">
+      <li>html</li>
+    <li>css</li>
+    <li>javascript</li>
+    </ul>
+   <button class="button-btn">See live</button>
+   <button class="button-btn">See Source</button>
+  </div>`;
+  
+
+  // modalContainer.appendChild(template.content);
+modalContainer.innerHTML += modalWindow;
+
+
+// show modal function
+
+function showModal() {
+  modalContainer.style.display = 'block';
+  wrapperContainer.classList.add('active');
+
+}
+
+function hidePop() {
+ modalContainer.style.display = 'none';
+ wrapperContainer.classList.remove('active');
+}
+
+
 
        
 

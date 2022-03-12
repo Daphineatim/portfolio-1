@@ -114,6 +114,6 @@
   gap: 10px;
 }
 
-.wrapper {
+.wrapper.show {
   display: none;
 }
