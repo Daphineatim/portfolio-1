@@ -106,7 +106,10 @@ const windowContent = cards.map((element) => ` <li class="works-card first-card"
 
         // modal pop up window
       
-const modalWindow = `<button class="cancels" onclick="hidePop()" type="button">&times;</button>
+const modalWindow = `
+<div class = "content-container"> 
+
+<button class="cancels" onclick="hidePop()" type="button">&times;</button>
   <div class="modal-inner">
     <h2>Tonic</h2>
     <ul>
@@ -123,7 +126,7 @@ const modalWindow = `<button class="cancels" onclick="hidePop()" type="button">&
     </ul>
    <button class="button-btn">See live</button>
    <button class="button-btn">See Source</button>
-  </div>`;
+  </div></div>`;
   
 
   // modalContainer.appendChild(template.content);
