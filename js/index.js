@@ -19,6 +19,9 @@ document.querySelectorAll('.menu-link').forEach((link) => link.addEventListener(
 }));
 
 // preserve data
+
+window.onload = showWorks();
+
 const formContainer = document.querySelector('.contact_container');
 const emailValue = document.querySelector('.email');
 const messageError = document.querySelector('.errorMessage');
@@ -37,8 +40,6 @@ formContainer.addEventListener('submit', (e) => {
     messageError.innerHTML = '*Write your email in lower case <br> * form invalid';
   }
 });
-
-window.onload = showWorks();
 
 if (formContainer) {
   const { name, email, message } = JSON.parse(localStorage.getItem('formData'));
