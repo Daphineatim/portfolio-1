@@ -98,18 +98,6 @@ ul {
   cursor: pointer;
 }
 
-.humberger ul {
-  display: none;
-}
-
-.humb-container ul {
-  list-style: none;
-  padding: 10% 0;
-  width: 40%;
-  text-align: center;
-  margin: 25% auto;
-}
-
 .head {
   padding: 15px;
   content: "";
@@ -144,30 +132,13 @@ ul {
   text-transform: uppercase;
 }
 
-/* .menu-icon {
+.menu-icon {
   display: flex;
   flex-direction: column;
   margin-top: 85px;
-} */
+}
 
-/* .hide {
-  width: 26px;
-  height: 26px;
-  position: absolute;
-  left: 85%;
-  margin-top: 15px;
-  color: #fff;
-} */
-
-/* The Close Button */
-
-/* .cancel {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold; */
-
-.sidebar {
+.sidebar.active {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -178,7 +149,7 @@ ul {
   left: 0;
   top: 0;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   overflow: auto;
   background-color: #6070ff;
   mix-blend-mode: multiply;
@@ -186,10 +157,12 @@ ul {
   opacity: 0.97;
 }
 
-.menu-icon {
-  display: flex;
-  flex-direction: column;
-  margin-top: 85px;
+.sidebar {
+  display: none;
+}
+
+.wrapper.show {
+  opacity: 0.97;
 }
 
 .menu-link {
@@ -205,7 +178,6 @@ ul {
 }
 
 .cancel-styling {
-  /* width: 26px; */
   height: 26px;
   position: absolute;
   left: 85%;
@@ -233,11 +205,6 @@ ul {
   cursor: pointer;
 }
 
-/* body.noscroll {
-  overflow: hidden;
-  position: fixed;
-} */
-
 ul.social-media-icons {
   width: 45%;
   display: flex;
@@ -246,7 +213,6 @@ ul.social-media-icons {
 }
 
 .border-radius {
-  /* background: grey; */
   border-bottom-left-radius: 70px;
   padding: 100px 0 120px 0;
 }
@@ -364,6 +330,7 @@ ul.social-media-icons {
   background: #fff;
 }
 
+/* about */
 .about {
   padding: 7.125rem 1.5rem;
   border-top-right-radius: 5rem;
@@ -575,99 +542,6 @@ ul.social-media-icons {
 .menu-desktop {
   display: none;
 }
-
-/* @media (min-width: 768px) {
-  .humberger ul {
-    display: flex;
-    padding: 0 8px;
-  }
-
-  .humberger ul li {
-    padding: 0 8px;
-  }
-
-  .humberger img {
-    display: none;
-  }
-
-  .button:hover {
-    background: white;
-  }
-
-  .navbar__logo .logo {
-    font-size: 1.7rem;
-    margin: 10px 0 0 20px;
-  }
-
-  .works-card-img {
-    width: 500px;
-    height: 350px;
-  }
-
-  .head {
-    background-image: url(./assets/header_bg.png);
-    background-origin: border-box;
-    background-size: contain;
-    height: 510px;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-
-  .btn {
-    color: #6070ff;
-    font-size: 17px;
-    font-weight: 500;
-    line-height: 24px;
-    text-align: center;
-    border-radius: 8px;
-    background: #fff;
-    margin: 8px 0;
-    width: 170px;
-    height: 60px;
-    padding: 12px;
-    border: 1px solid #6070ff;
-    cursor: pointer;
-  }
-
-  ul.social-media-icons {
-    width: 170.17px;
-    padding: 0;
-  }
-
-  .Contact-form {
-    background-color: #6070ff;
-    background-image: url("./contact-form.png");
-    background-repeat: no-repeat;
-    background-position: top right;
-    border-top-left-radius: 70px;
-    position: static;
-    background-size: contain;
-  }
-
-  .about-lang-row {
-    align-items: center;
-    gap: 1rem;
-    border-radius: 8px;
-    margin: 12px 0;
-    padding: 9px 12px;
-    display: flex;
-    background: #f7f7f9;
-  }
-
-  .about-lang {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-}
-
-.humberger-toggle {
-  display: block;
-}
-
-.menu-toggle {
-  display: none;
-} */
 
 @media (min-width: 1024px) {
   .humberger-toggle {
