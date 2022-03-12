@@ -539,6 +539,14 @@ ul.social-media-icons {
   margin: 0.8rem 0 2.8rem;
 }
 
+.error-message {
+  color: rgb(0 0 0 / 40%);
+  margin-top: -0.8rem;
+  font-size: 14px;
+  text-transform: lowercase;
+  background: rgb(236, 233, 227);
+}
+
 .menu-desktop {
   display: none;
 }
