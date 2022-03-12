@@ -17,5 +17,3 @@ document.querySelectorAll('.menu-link').forEach((link) => link.addEventListener(
   sideBar.classList.remove('active');
   wrapper.classList.remove('show');
 }));
-
-
