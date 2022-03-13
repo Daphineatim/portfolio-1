@@ -7,6 +7,8 @@
 ::before {
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+
+  /* width: 100%; */
 }
 
 h1,
@@ -693,3 +695,5 @@ ul.social-media-icons {
     top: 182px;
   }
 }
+
+/* pop-up */

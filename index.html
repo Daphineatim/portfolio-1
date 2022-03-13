@@ -15,9 +15,14 @@
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="mobile.css" />
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./css/modal.css" />
     <title>Daphine's Portfolio</title>
   </head>
   <body>
+     <div class="modal">
+
+     </div>
+     <div class="wrapper-container">
      <div class="sidebar" id="sidebar">
     <img src="./assets/cancel.svg" alt="close" class="cancel cancel-styling"/>
         <div class="menu-icon">
@@ -53,7 +58,7 @@
         </nav>
       </header>
 
-     
+    
         
       <!-- intro section -->
       <section class="head flex">
@@ -104,137 +109,13 @@
     </div>
 
     <!-- works-section -->
-    <section class="works" id="work">
+    <div class="works" id="work">
       <ul class="works-card-list">
         <!-- first-project -->
-        <li class="works-card first-card">
-          <img
-            class="works-card-img"
-            src="./assets/tonic.svg"
-            alt="tonic project"
-          />
-          <div class="works-card-text">
-            <h2 class="works-card-title">Tonic</h2>
-            <div class="works-card-sub">
-              <p class="sub-1">CANOPY</p>
-              <ul class="works-card-sub-list">
-                <li class="works-card-sub-link">Backend Dev</li>
-                <li class="works-card-sub-link">2015</li>
-              </ul>
-            </div>
-            <p class="works-card-desc">
-              A daily selection of privately personalized read;no accounts or
-              sign-ups required.
-            </p>
-            <div class="works-card-topics-list">
-              <p class="works-card-topic">html</p>
-              <p class="works-card-topic">css</p>
-              <p class="works-card-topic">javascript</p>
-            </div>
-            <div class="works-card-btn">
-              <button type="button" class="btn">See Project</button>
-            </div>
-          </div>
-        </li>
+       
 
-        <!-- second-project -->
-        <li class="works-card second-card">
-          <img
-            class="works-card-img"
-            src="./assets/multi-post.svg.svg"
-            alt="tonic project"
-          />
-          <div class="works-card-text">
-            <h2 class="works-card-title">Multi-Post Stories</h2>
-            <div class="works-card-sub">
-              <p class="sub-1">CANOPY</p>
-              <ul class="works-card-sub-list">
-                <li class="works-card-sub-link">Backend Dev</li>
-                <li class="works-card-sub-link">2015</li>
-              </ul>
-            </div>
-            <p class="works-card-desc">
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required.
-            </p>
-            <div class="works-card-topics-list">
-              <p class="works-card-topic">html</p>
-              <p class="works-card-topic">Ruby on rails</p>
-              <p class="works-card-topic">css</p>
-              <p class="works-card-topic">javascript</p>
-            </div>
-            <div class="works-card-btn">
-              <button type="button" class="btn">See Project</button>
-            </div>
-          </div>
-        </li>
-
-        <!-- third-project -->
-        <li class="works-card third-card">
-          <img
-            class="works-card-img"
-            src="./assets/facebook.svg"
-            alt="Facebook"
-          />
-          <div class="works-card-text">
-            <h2 class="works-card-title">Facebook 360</h2>
-            <div class="works-card-sub">
-              <p class="sub-1">FACEBOOK</p>
-              <ul class="works-card-sub-list">
-                <li class="works-card-sub-link">Full Stack Dev</li>
-                <li class="works-card-sub-link">2015</li>
-              </ul>
-            </div>
-            <p class="works-card-desc">
-              Exploring the future of media in Facebook's first Virtual Reality
-              app; a place to discover and enjoy 360 photos and videos on Gear
-              VR.
-            </p>
-            <div class="works-card-topics-list">
-              <p class="works-card-topic">html</p>
-              <p class="works-card-topic">Ruby on rails</p>
-              <p class="works-card-topic">css</p>
-              <p class="works-card-topic">javascript</p>
-            </div>
-            <div class="works-card-btn">
-              <button type="button" class="btn">See Project</button>
-            </div>
-          </div>
-        </li>
-
-        <!-- fourth-project -->
-        <li class="works-card fourth-card">
-          <img
-            class="works-card-img"
-            src="./assets/uber.svg"
-            alt="Uber Navigation"
-          />
-          <div class="works-card-text">
-            <h2 class="works-card-title">Uber Navigation</h2>
-            <div class="works-card-sub">
-              <p class="sub-1">Uber</p>
-              <ul class="works-card-sub-list">
-                <li class="works-card-sub-link">Lead Developer</li>
-                <li class="works-card-sub-link">2018</li>
-              </ul>
-            </div>
-            <p class="works-card-desc">
-              A smart assistant to make driving more safe, efficient, and fun by
-              unlocking your most expensive computer: your car.
-            </p>
-            <div class="works-card-topics-list">
-              <p class="works-card-topic">html</p>
-              <p class="works-card-topic">Ruby on rails</p>
-              <p class="works-card-topic">css</p>
-              <p class="works-card-topic">javascript</p>
-            </div>
-            <div class="works-card-btn">
-              <button type="button" class="btn">See Project</button>
-            </div>
-          </div>
-        </li>
       </ul>
-    </section>
+    </div>
 
     <!-- about-me-section -->
     <section class="about" id="about">
@@ -380,7 +261,7 @@
       </div>
     </footer>
     </div>
+  </div>
     <script src="/js/index.js"></script>
-    <script src="/js/formValidation.js"></script>
   </body>
 </html>

@@ -113,3 +113,7 @@
   justify-content: space-around;
   gap: 10px;
 }
+
+.wrapper.show {
+  display: none;
+}
